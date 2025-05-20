@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>TPCeremoni</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+
+<body>
+    <a href="page1.html"><img src="Logo.JPG" width="250" height="180" alt="Logo"></a>
+    <div class="container_informations">
+        <h2>Plus d'information</h2>
+        <iframe src="https://www-ensibs.univ-ubs.fr/fr/index.html"
+            height="300px" width="100%" id="Iframe_ENSIBS"></iframe>
+            <h3> Decouvrir plus d'information sur notre site :
+                <a href="https://www-ensibs.univ-ubs.fr/fr/formations/formations-d-ingenieurs/genie-industriel-4-0.html" id="Iframe_ENSIBS_a">ensibs.fr</a>
+            </h3>
+        <h2>Nous contacter</h2>
+        <h3 id="MyfooterJS2">Retrouver nous sur notre site de Lorient.</h3>
+            <script>
+                function myFunction() {
+                    document.getElementById("MyfooterJS2").styl
+                }
+            </script>
+            <button type="button" onclick="myFunction()" id="button-myfooter">Retrouvez nous !</button>
+            <!-- ffichage de la date et heure -->
+             <h2>Dernière consultation</h2>
+             <button type="button" id="button-myfooter-nformation"
+             onclick="document.getElementById('consultation').innerHTML = 
+             new Date().toLocaleString('fr-FR', {weekday : 'long', year:'numeric', month:'long', day:'numeric', hour:'2-digit'
+             , minute:'2-digit', second:'2-digit'
+             })">Cliquez-ici !</button>
+             <p id="consultation"></p>
+    </div>
+
+</body>
+</html>

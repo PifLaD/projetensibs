@@ -1,0 +1,264 @@
+
+body, html{
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color: green;
+    font-size: 18px;
+}
+span{
+    color: dimgray;
+}
+.section1{
+    background-color: whitesmoke;
+    color: dimgray;
+    width: 200px;
+    height: auto;
+    font-size: 18px;
+    padding: 20px;
+    margin: 10px;
+}
+.section2{
+    background-color: whitesmoke;
+    color: green;
+    width: 200px;
+    height: auto;
+    font-size: 18px;
+    padding: 20px;
+    margin: 10px;
+}
+input[type=text], input[type=password]{
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 22px;
+    background-color: whitesmoke; 
+}
+p,h3 {
+    color: dimgray;
+    font-size: 18px;
+}
+
+.boutton-style{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block ;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bouton-ceremony{
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block ;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container{
+    position: absolute;
+    right: 20px;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+.containerceremony{
+    width: 70%;
+    margin: auto;
+}
+
+.bg-img{
+    background-image: url("ensibs.jpg");
+    min-height: 380px;
+    background-position: center;	
+    background-size: cover;		
+}
+
+.btn{
+    background-color: green;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    flex: 1;
+    width: 70%;
+    margin: 20px auto;
+}
+.mainhead {
+    display: flex;
+    flex: 1;
+    width: 90%;
+    margin: 20px auto;
+}
+.headone{
+    width: 50%;
+    padding: 20px;
+}
+.headtwo{
+    width: 50%;
+    padding: 20px;
+}
+
+.content{
+    width: 80%;
+    padding: 20px;
+}
+.sectionleft{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container_information{
+    width: 80%;
+    margin: 2px auto; /* centre le contenu*/
+    padding: 30px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th {
+    text-align: left;
+}
+caption {
+    caption-side: top; /* legende au dessus du tableau*/
+    font-size: 18px;
+    margin-bottom: 10px; /*espace entre la légende et le tableau*/
+    font-weight: bold;
+    text-align: center; /*centrer la légende*/
+    color: green; /* couleur rouge */
+}
+#myfooterJS {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+#myfooterJS:hover {
+    color: green;
+}
+#button-myfooter {
+    display: block;
+    margin: 20px auto;
+    border: black;
+    cursor: pointer;
+    background-color: lightblue; /*Couleur de fond du bouton*/
+    color: black; /* couelur du texte*/
+    border: 5px solid black; /* bordure*/
+    padding: 15px 40px; /* espacement intérieur*/
+    text-align: center;
+    font-size : 22px;
+    font-weight: bold;
+    font-family : 'Times New Roman';
+    
+}
+#button-myfooter:hover {
+    background-color: green;
+}
+header, footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+header {
+    font-size: 32px
+}
+footer {
+    font-size: 16px;
+}
+.container2 {
+    flex: 1;
+    display: grid;
+    width: 100%;
+    margin: 0;
+}
+nav, article {
+    padding: 20px;
+}
+nav{
+    background-color: whitesmoke;
+    flex: 1;
+    font-size: 15px;
+}
+article {
+    background-color: white;
+    font-size: 18px;
+}
+nav ul{
+    list-style-type: none; /*supprimer les puces*/
+    padding: 0;
+}
+nav ul li{
+    flex: 1;
+}
+nav ul li a {
+    color: black;
+    font-size: 10px;
+    padding: 15px;
+    border: 1px;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box; /* la largeur et la haute incluent les bordure interne*/
+
+}
+nav ul li a:hover {
+    background-color: darkolivegreen;
+    color: white;
+}
+.btn2 {
+    display: inline-block; /* element en ligne*/
+    padding: 15px 25px;
+    margin: 5px 0;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn2:hover{
+    background-color: black;
+}
+
+@media (min-width: 600px) {
+    .container2{
+        grid-template-columns: 20% 80%; /*deux colonnes*/
+        grid-template-rows: none; /*aucune ligne*/
+    }
+    nav{
+        order: 1; /*place en premier dasn l'ordre de la grille*/
+
+    }
+    article{
+        order: 2;
+    }
+}
